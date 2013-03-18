@@ -1,0 +1,31 @@
+name: NoSpamLight
+main: de.secretcraft.nospamlight.NoSpamLight
+version: 0.6
+author: d4rkpl4y3r
+description: Provides a simple spam protection.
+commands:
+  nospamlight:
+    description: This command gives access to all NoSpamLight commands (e.g. reload)
+    usage: /<command> <cmd>
+    permission: nospamlight.command
+    permission-message: You don't have permission.
+permissions:
+  nospamlight.*:
+    description: Exception plus access to all commands
+    children:
+      nospamlight.exception: true
+      nospamlight.command.*: true
+  nospamlight.exeption:
+    description: No checks on chat messages will be done
+    default: op
+  nospamlight.command.*:
+    description: Gives access to all commands of NoSpamLight
+    children:
+      nospamlight.command: true
+      nospamlight.command.reload: true
+  nospamlight.command:
+    description: Without this, the player can't use NoSpamLight commands
+    default: op
+  nospamlight.command.reload:
+    description: Gives access to the reload command
+    default: op

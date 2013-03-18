@@ -1,0 +1,20 @@
+warningsBeforeKick: 3
+milliSecondsToRemoveWarnings: 600000
+
+# Zeitangabe in Millisekunden.
+minDelayBetweenMessages: 800
+
+# Zeitangabe in Sekunden.
+minDelayBetweenSameMessages: 180
+
+MIN_WAIT_BETWEEN_SAME_MESSAGES: '&cYou have to wait %d seconds to write the same text again.'
+MIN_WAIT_BETWEEN_MESSAGES: '&cYou have to wait %.1f seconds between each message.'
+UPPERCASE_WARNING: '&cYou are not allowed to write that much &4UPPER&ccase.'
+BLACKLIST_WARNING: '&cYou are not allowed to say &4%s&c.'
+
+KICK_MESSAGE: 'SPAM: You have been warned 3 times.'
+
+blacklist:
+    - 'fick'
+    - 'fuck'
+    - 'arsch'
